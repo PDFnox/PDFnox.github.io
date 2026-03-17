@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PDFnox – Free PDF Tools Online | Compress, Merge, Convert PDF</title>
+  <meta name="description" content="Free online PDF tools. Compress, merge, split, convert PDF to Word, Word to PDF, PDF to JPG and more. Fast, secure, no signup required." />
+  <meta name="keywords" content="compress pdf, merge pdf, split pdf, pdf to word, word to pdf, pdf to jpg, jpg to pdf, watermark pdf, free pdf tools, online pdf editor" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://pdfnox.com/" />
+  <meta property="og:title" content="PDFnox – Free PDF Tools Online" />
+  <meta property="og:description" content="Compress, merge, convert PDFs instantly. Free, fast, secure." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://pdfnox.com/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav">
+      <div class="logo">
+        <div class="logo-icon">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <rect width="32" height="32" rx="8" fill="#C9A84C"/>
+            <path d="M8 8h10l6 6v10a2 2 0 01-2 2H8a2 2 0 01-2-2V10a2 2 0 012-2z" fill="#0a0a0a"/>
+            <path d="M18 8v6h6" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M10 16h12M10 20h8" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <span class="logo-text">PDF<span class="logo-accent">nox</span></span>
+      </div>
+      <div class="nav-links">
+        <a href="#tools">Tools</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <button class="btn-nav-cta" onclick="scrollToTools()">Try Free</button>
+        <div id="authNavBtn"></div>
+      </div>
+      <button class="nav-hamburger" onclick="toggleMobileMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#tools" onclick="toggleMobileMenu()">Tools</a>
+      <a href="#pricing" onclick="toggleMobileMenu()">Pricing</a>
+      <a href="#faq" onclick="toggleMobileMenu()">FAQ</a>
+      <button class="btn-nav-cta" onclick="scrollToTools(); toggleMobileMenu()">Try Free →</button>
+      <div id="authNavBtnMobile"></div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-glow"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">⚡ Fast · Secure · Free to Start</div>
+      <h1 class="hero-title">
+        The PDF Tools<br/>
+        <span class="hero-title-accent">You Actually Need</span>
+      </h1>
+      <p class="hero-subtitle">Compress, merge, split, and convert PDFs in seconds. No signup, no watermarks, no nonsense.</p>
+      <div class="hero-cta">
+        <button class="btn-primary" onclick="scrollToTools()">Start For Free →</button>
+        <span class="hero-note">3 free uses · No credit card</span>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><strong>8</strong><span>PDF Tools</span></div>
+        <div class="stat-div"></div>
+        <div class="stat"><strong>100%</strong><span>Secure</span></div>
+        <div class="stat-div"></div>
+        <div class="stat"><strong>&lt;5s</strong><span>Processing</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="pdf-float pdf-float-1">
+        <svg width="48" height="60" viewBox="0 0 48 60" fill="none">
+          <rect width="48" height="60" rx="6" fill="#1a1a1a" stroke="#C9A84C" stroke-width="1"/>
+          <path d="M10 10h20l8 8v32a2 2 0 01-2 2H10a2 2 0 01-2-2V12a2 2 0 012-2z" fill="#C9A84C" opacity="0.15"/>
+          <path d="M30 10v8h8" stroke="#C9A84C" stroke-width="1.2" stroke-linecap="round"/>
+          <path d="M12 26h24M12 32h20M12 38h16" stroke="#C9A84C" stroke-width="1" stroke-linecap="round" opacity="0.6"/>
+        </svg>
+        <span>report.pdf</span>
+      </div>
+      <div class="pdf-float pdf-float-2">
+        <svg width="48" height="60" viewBox="0 0 48 60" fill="none">
+          <rect width="48" height="60" rx="6" fill="#1a1a1a" stroke="#C9A84C" stroke-width="1"/>
+          <path d="M10 10h20l8 8v32a2 2 0 01-2 2H10a2 2 0 01-2-2V12a2 2 0 012-2z" fill="#C9A84C" opacity="0.15"/>
+          <path d="M30 10v8h8" stroke="#C9A84C" stroke-width="1.2" stroke-linecap="round"/>
+          <path d="M12 26h24M12 32h20M12 38h16" stroke="#C9A84C" stroke-width="1" stroke-linecap="round" opacity="0.6"/>
+        </svg>
+        <span>invoice.pdf</span>
+      </div>
+      <div class="pdf-float pdf-float-3">
+        <svg width="48" height="60" viewBox="0 0 48 60" fill="none">
+          <rect width="48" height="60" rx="6" fill="#1a1a1a" stroke="#C9A84C" stroke-width="1"/>
+          <path d="M10 10h20l8 8v32a2 2 0 01-2 2H10a2 2 0 01-2-2V12a2 2 0 012-2z" fill="#C9A84C" opacity="0.15"/>
+          <path d="M30 10v8h8" stroke="#C9A84C" stroke-width="1.2" stroke-linecap="round"/>
+          <path d="M12 26h24M12 32h20M12 38h16" stroke="#C9A84C" stroke-width="1" stroke-linecap="round" opacity="0.6"/>
+        </svg>
+        <span>contract.pdf</span>
+      </div>
+      <div class="hero-arrow">→</div>
+      <div class="pdf-result">
+        <div class="result-icon">✓</div>
+        <span>Done!</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tools Section -->
+  <section class="tools-section" id="tools">
+    <div class="section-container">
+      <div class="section-label">All Tools</div>
+      <h2 class="section-title">Everything you need for PDFs</h2>
+      <div class="tools-grid">
+
+        <div class="tool-card" onclick="openTool('compress')">
+          <div class="tool-icon" style="background:linear-gradient(135deg,#C9A84C,#a07830)">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 4v14M8 12l6 6 6-6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 20h20" stroke="white" stroke-width="2" stroke-linecap="round"/><path d="M4 24h20" stroke="white" stroke-width="1.2" stroke-linecap="round" opacity="0.5"/></svg>
+          </div>
+          <h3>Compress PDF</h3>
+          <p>Reduce PDF file size without losing quality</p>
+          <div class="tool-tag">Most Popular</div>
+        </div>
+
+        <div class="tool-card" onclick="openTool('merge')">
+          <div class="tool-icon" style="background:linear-gradient(135deg,#4a9eff,#2563eb)">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M6 8h6v12H6zM16 8h6v12h-6z" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 14h4" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Merge PDF</h3>
+          <p>Combine multiple PDFs into one file</p>
+        </div>
+
+        <div class="tool-card" onclick="openTool('split')">
+          <div class="tool-icon" style="background:linear-gradient(135deg,#a855f7,#7c3aed)">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M8 4h12v20H8z" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 4v20M8 14h6M14 14h6" stroke="white" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/></svg>
+          </div>
+          <h3>Split PDF</h3>
+          <p>Extract pages or split into multiple files</p>
+        </div>
+
+        <div class="tool-card" onclick="openTool('pdf-to-word')">
+          <div class="tool-icon" style="background:linear-gradient(135deg,#2563eb,#1d4ed8)">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="4" y="6" width="10" height="16" rx="2" stroke="white" stroke-width="1.8"/><rect x="14" y="6" width="10" height="16" rx="2" stroke="white" stroke-width="1.8"/><path d="M14 14h-4" stroke="white" stroke-width="1.5" stroke-linecap="round"/><path d="M11 11l-3 3 3 3" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>PDF to Word</h3>
+          <p>Convert PDF documents to editable Word files</p>
+        </div>
+
+        <div class="tool-card" onclick="openTool('word-to-pdf')">
+          <div class="tool-icon" style="background:linear-gradient(135deg,#059669,#047857)">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="4" y="6" width="10" height="16" rx="2" stroke="white" stroke-width="1.8"/><rect x="14" y="6" width="10" height="16" rx="2" stroke="white" stroke-width="1.8"/><path d="M14 14h4" stroke="white" stroke-width="1.5" stroke-linecap="round"/><path d="M17 11l3 3-3 3" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Word to PDF</h3>
+          <p>Convert Word documents to PDF format</p>
+        </div>
+
+        <div class="tool-card" onclick="openTool('pdf-to-jpg')">
+          <div class="tool-icon" style="background:linear-gradient(135deg,#f59e0b,#d97706)">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="3" y="5" width="16" height="18" rx="2" stroke="white" stroke-width="1.8"/><rect x="9" y="9" width="16" height="14" rx="2" fill="rgba(255,255,255,0.15)" stroke="white" stroke-width="1.8"/><circle cx="14" cy="16" r="3" stroke="white" stroke-width="1.5"/></svg>
+          </div>
+          <h3>PDF to JPG</h3>
+          <p>Convert PDF pages to high quality images</p>
+        </div>
+
+        <div class="tool-card" onclick="openTool('jpg-to-pdf')">
+          <div class="tool-icon" style="background:linear-gradient(135deg,#ef4444,#dc2626)">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="3" y="9" width="16" height="14" rx="2" stroke="white" stroke-width="1.8"/><circle cx="10" cy="14" r="2.5" stroke="white" stroke-width="1.5"/><rect x="9" y="5" width="16" height="18" rx="2" fill="rgba(255,255,255,0.15)" stroke="white" stroke-width="1.8"/></svg>
+          </div>
+          <h3>JPG to PDF</h3>
+          <p>Convert images to PDF documents</p>
+        </div>
+
+        <div class="tool-card" onclick="openTool('watermark')">
+          <div class="tool-icon" style="background:linear-gradient(135deg,#6366f1,#4f46e5)">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="4" y="4" width="20" height="20" rx="3" stroke="white" stroke-width="1.8"/><text x="7" y="19" font-size="10" fill="white" opacity="0.7" font-family="sans-serif">W</text><path d="M4 10h20M10 4v20" stroke="white" stroke-width="1" opacity="0.3"/></svg>
+          </div>
+          <h3>Add Watermark</h3>
+          <p>Add text or image watermarks to PDFs</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Tool Modal -->
+  <div class="modal-overlay hidden" id="toolModal">
+    <div class="modal-card tool-modal-card">
+      <button class="modal-close" onclick="closeTool()">✕</button>
+      <div id="toolModalContent"></div>
+    </div>
+  </div>
+
+  <!-- Pricing -->
+  <section class="pricing-section" id="pricing">
+    <div class="section-container">
+      <div class="section-label">Simple Pricing</div>
+      <h2 class="section-title">Start free, upgrade when ready</h2>
+      <p class="section-sub">No hidden fees. Cancel anytime.</p>
+      <div class="pricing-grid">
+
+        <div class="pricing-card">
+          <div class="plan-name">Free</div>
+          <div class="plan-price"><span class="plan-currency">$</span>0</div>
+          <div class="plan-desc">3 uses per tool</div>
+          <ul class="plan-features">
+            <li>✓ All 8 PDF tools</li>
+            <li>✓ Files up to 10MB</li>
+            <li>✓ 3 uses per tool</li>
+            <li>✓ No signup required</li>
+          </ul>
+          <button class="btn-plan" onclick="scrollToTools()">Start Free →</button>
+        </div>
+
+        <div class="pricing-card">
+          <div class="plan-name">Starter</div>
+          <div class="plan-price"><span class="plan-currency">$</span>3<span class="plan-cents">.95</span><span class="plan-period">/mo</span></div>
+          <div class="plan-desc">50 files per day</div>
+          <ul class="plan-features">
+            <li>✓ All 8 PDF tools</li>
+            <li>✓ Files up to 50MB</li>
+            <li>✓ 50 files/day</li>
+            <li>✓ No watermarks</li>
+            <li>✓ Priority processing</li>
+          </ul>
+          <button class="btn-plan" onclick="openPaymentModal('starter')">Get Starter →</button>
+          <p class="plan-note">One-time monthly payment</p>
+        </div>
+
+        <div class="pricing-card pricing-featured">
+          <div class="plan-badge">Most Popular</div>
+          <div class="plan-name">Pro</div>
+          <div class="plan-price"><span class="plan-currency">$</span>9<span class="plan-cents">.95</span><span class="plan-period">/mo</span></div>
+          <div class="plan-desc">Unlimited files</div>
+          <div class="plan-savings">Best Value</div>
+          <ul class="plan-features">
+            <li>✓ All 8 PDF tools</li>
+            <li>✓ Files up to 200MB</li>
+            <li>✓ Unlimited files</li>
+            <li>✓ No watermarks</li>
+            <li>✓ Batch processing</li>
+            <li>✓ API access (soon)</li>
+          </ul>
+          <button class="btn-plan btn-plan-featured" onclick="openPaymentModal('pro')">Get Pro →</button>
+          <p class="plan-note">One-time · Money back guarantee</p>
+        </div>
+
+        <div class="pricing-card">
+          <div class="plan-name">Annual</div>
+          <div class="plan-price"><span class="plan-currency">$</span>18<span class="plan-cents">.95</span><span class="plan-period">/yr</span></div>
+          <div class="plan-desc">Best for power users</div>
+          <div class="plan-savings">Save 84% vs Pro monthly</div>
+          <ul class="plan-features">
+            <li>✓ Everything in Pro</li>
+            <li>✓ Unlimited files</li>
+            <li>✓ Files up to 500MB</li>
+            <li>✓ Priority support</li>
+            <li>✓ Early access features</li>
+          </ul>
+          <button class="btn-plan" onclick="openPaymentModal('annual')">Get Annual →</button>
+          <p class="plan-note">One-time yearly payment</p>
+        </div>
+
+      </div>
+      <div class="trust-badges">
+        <div class="trust-badge">🔒 SSL Secured</div>
+        <div class="trust-badge">💳 Secure Payments</div>
+        <div class="trust-badge">↩️ 30 day refund</div>
+        <div class="trust-badge">🌍 GDPR Compliant</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="how-section" id="how-it-works">
+    <div class="section-container">
+      <div class="section-label">Simple Process</div>
+      <h2 class="section-title">Three steps, done</h2>
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-num">01</div>
+          <div class="step-icon">📤</div>
+          <h3>Upload</h3>
+          <p>Drag & drop your PDF or click to browse. Supports files up to 500MB.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step-card">
+          <div class="step-num">02</div>
+          <div class="step-icon">⚡</div>
+          <h3>Process</h3>
+          <p>Our servers handle everything instantly. No waiting, no queues.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step-card">
+          <div class="step-num">03</div>
+          <div class="step-icon">💾</div>
+          <h3>Download</h3>
+          <p>Your file is ready. Download instantly, files deleted after 1 hour.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq-section" id="faq">
+    <div class="section-container faq-container">
+      <div class="section-label">Questions</div>
+      <h2 class="section-title">Frequently Asked</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(0)">Is my data secure? <span class="faq-icon">+</span></button>
+          <div class="faq-a">Yes. All files are encrypted in transit and automatically deleted from our servers after 1 hour. We never store or share your documents.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(1)">What file formats are supported? <span class="faq-icon">+</span></button>
+          <div class="faq-a">We support PDF, DOC, DOCX, JPG, JPEG, PNG, and WEBP depending on the tool. Output is always optimized for quality.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(2)">Is there a file size limit? <span class="faq-icon">+</span></button>
+          <div class="faq-a">Free users can upload files up to 10MB. Starter plan supports up to 50MB, Pro up to 200MB, and Annual up to 500MB.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(3)">Do I need to create an account? <span class="faq-icon">+</span></button>
+          <div class="faq-a">No account needed for free use. Create an account to track usage and manage your subscription.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" onclick="toggleFaq(4)">Is there a refund policy? <span class="faq-icon">+</span></button>
+          <div class="faq-a">Yes! We offer a 30-day money back guarantee. Contact support@pdfnox.com for a full refund, no questions asked.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="logo">
+          <div class="logo-icon">
+            <svg width="24" height="24" viewBox="0 0 32 32" fill="none">
+              <rect width="32" height="32" rx="8" fill="#C9A84C"/>
+              <path d="M8 8h10l6 6v10a2 2 0 01-2 2H8a2 2 0 01-2-2V10a2 2 0 012-2z" fill="#0a0a0a"/>
+              <path d="M18 8v6h6" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <span class="logo-text">PDF<span class="logo-accent">nox</span></span>
+        </div>
+        <p>Professional PDF tools for everyone.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Tools</h4>
+          <a href="#tools" onclick="openTool('compress')">Compress PDF</a>
+          <a href="#tools" onclick="openTool('merge')">Merge PDF</a>
+          <a href="#tools" onclick="openTool('split')">Split PDF</a>
+          <a href="#tools" onclick="openTool('pdf-to-word')">PDF to Word</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="#" onclick="showModal('tos')">Terms of Service</a>
+          <a href="#" onclick="showModal('privacy')">Privacy Policy</a>
+          <a href="#" onclick="showModal('refund')">Refund Policy</a>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <a href="mailto:support@pdfnox.com">support@pdfnox.com</a>
+          <a href="#faq">FAQ</a>
+          <a href="#" onclick="showModal('contact')">Contact Us</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 PDFnox. All rights reserved.</p>
+      <p>Fast · Secure · Private</p>
+    </div>
+  </footer>
+
+  <!-- Toast -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Payment Modal -->
+  <div class="modal-overlay hidden" id="paymentModal">
+    <div class="modal-card payment-card">
+      <h2 class="modal-title">Complete Your Purchase</h2>
+      <p class="modal-desc">Choose your preferred payment method</p>
+      <div class="payment-methods" id="paymentMethods">
+        <button class="payment-method" onclick="payBinance()">
+          <img src="binance.png" width="32" height="32" style="border-radius:6px;object-fit:contain"/>
+          <div><strong>Binance Pay</strong><span>Fast crypto payment</span></div>
+        </button>
+        <button class="payment-method" onclick="payLemon()">
+          <div class="payment-icon">💳</div>
+          <div><strong>Pay with Card</strong><span>Visa, Mastercard, PayPal</span></div>
+        </button>
+      </div>
+      <div id="ivedPaidSection" style="display:none;text-align:center;margin-top:16px;">
+        <p style="color:#9ca3af;font-size:0.85rem;margin-bottom:12px;">After paying with Binance, click below:</p>
+        <button id="ivePaidBtn" style="background:linear-gradient(135deg,#C9A84C,#a07830);color:#0a0a0a;border:none;padding:12px 28px;border-radius:100px;font-weight:700;cursor:pointer;font-size:0.95rem;font-family:inherit;">✅ I've Paid – Activate Plan</button>
+      </div>
+      <button class="btn-secondary" style="margin-top:24px;" onclick="closePaymentModal()">Cancel</button>
+    </div>
+  </div>
+
+  <!-- Info Modal -->
+  <div class="modal-overlay hidden" id="infoModal">
+    <div class="modal-card modal-wide modal-scroll">
+      <button class="modal-close" onclick="closeInfoModal()">✕</button>
+      <div id="infoModalContent"></div>
+    </div>
+  </div>
+
+  <!-- Contact Modal -->
+  <div class="modal-overlay hidden" id="contactModal">
+    <div class="modal-card">
+      <button class="modal-close" onclick="document.getElementById('contactModal').classList.add('hidden')">✕</button>
+      <h2 class="modal-title">Contact Us</h2>
+      <p class="modal-desc">We typically respond within 24 hours.</p>
+      <div class="contact-form">
+        <input type="text" placeholder="Your name" id="contactName" class="form-input" />
+        <input type="email" placeholder="Your email" id="contactEmail" class="form-input" />
+        <textarea placeholder="How can we help?" id="contactMsg" class="form-textarea" rows="4"></textarea>
+        <button class="btn-primary" onclick="submitContact()">Send Message</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Auth Modal -->
+  <div class="modal-overlay hidden" id="authModal">
+    <div class="modal-card">
+      <button class="modal-close" onclick="document.getElementById('authModal').classList.add('hidden')">✕</button>
+      <div id="authModalContent"></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
