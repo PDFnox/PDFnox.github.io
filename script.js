@@ -6,14 +6,11 @@
 // ============================================================
 // CONFIG
 // ============================================================
-const SUPABASE_URL = 'YOUR_SUPABASE_URL';
-const SUPABASE_ANON_KEY = 'YOUR_SUPABASE_ANON_KEY';
+const SUPABASE_URL = 'https://gjifjpftundsstvtytdx.supabase.co';
+const SUPABASE_ANON_KEY = 'sb_publishable_TknQVJw3rxxD3NLfO4D6sw_ooEOr4vd';
 const ILOVEPDF_PUBLIC_KEY = 'project_public_1504bba3ceb07d8e5dc665a0b0557e68_sRN-G9e5d733d8ba9be051a16ecfd1eb1e4c2';
 const ILOVEPDF_SECRET_KEY = 'secret_key_834bb374a7eada78bc0932a9540911f2_Yn-sJ6f9a3445bb2efc763b0f216d21491c6e';
 const ILOVEPDF_API = 'https://api.ilovepdf.com/v1';
-
-const { createClient } = window.supabase;
-const db = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 // ============================================================
 // STATE
@@ -64,6 +61,8 @@ const BINANCE_URLS = {
   annual: 'https://s.binance.com/ANNUAL',
 };
 
+const { createClient } = window.supabase;
+const db = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 // ============================================================
 // INIT
 // ============================================================
