@@ -56,9 +56,9 @@ const LEMON_URLS = {
 
 // Binance Pay URLs (replace with your actual URLs)
 const BINANCE_URLS = {
-  starter: 'https://s.binance.com/STARTER',
-  pro: 'https://s.binance.com/PRO',
-  annual: 'https://s.binance.com/ANNUAL',
+  starter: 'https://s.binance.com/v0XyMSYn',
+  pro: 'https://s.binance.com/ijOIf03a',
+  annual: 'https://s.binance.com/mipu4n6N',
 };
 
 const { createClient } = window.supabase;
