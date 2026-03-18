@@ -49,9 +49,9 @@ const PLANS = {
 
 // Lemon Squeezy checkout URLs (replace with your actual URLs)
 const LEMON_URLS = {
-  starter: 'https://pdfnox.lemonsqueezy.com/checkout/buy/STARTER_ID',
-  pro: 'https://pdfnox.lemonsqueezy.com/checkout/buy/PRO_ID',
-  annual: 'https://pdfnox.lemonsqueezy.com/checkout/buy/ANNUAL_ID',
+  starter: 'https://snipix-ai.lemonsqueezy.com/checkout/buy/4137f749-c825-4bda-8677-1d9712b153fa',
+  pro: 'https://snipix-ai.lemonsqueezy.com/checkout/buy/d48db757-a0c4-4496-8d58-f3ff09f0e105',
+  annual: 'https://snipix-ai.lemonsqueezy.com/checkout/buy/d16faf71-bfb9-4764-9ff0-4fe19254bc79',
 };
 
 // Binance Pay URLs (replace with your actual URLs)
