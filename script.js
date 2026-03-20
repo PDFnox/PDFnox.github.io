@@ -263,6 +263,14 @@ function getCreditsDisplay() {
   return state.profile?.credits ?? 0;
 }
 
+function canProcess() {
+  if (!state.user) {
+    const freeUsed = parseInt(localStorage.getItem('pn_free_used') || '0');
+    return freeUsed < MAX_FREE;
+  }
+  return (state.profile?.credits ?? 0) > 0;
+}
+
 async function deductCredit() {
   if (state.user && state.profile) {
     state.profile.credits = Math.max(0, (state.profile.credits || 0) - 1);
