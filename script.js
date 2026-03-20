@@ -263,18 +263,6 @@ function getCreditsDisplay() {
   return state.profile?.credits ?? 0;
 }
 
-if (!canProcess()) {
-  if (!state.user) {
-    showToast('Sign in to get 3 free uses', 'warning');
-    setTimeout(() => showAuthModal('signup'), 1200);
-  } else {
-    showToast('No credits remaining. Please upgrade.', 'warning');
-    document.getElementById('toolModal').classList.add('hidden');
-    document.getElementById('pricing').scrollIntoView({ behavior: 'smooth' });
-  }
-  return;
-}
-
 async function deductCredit() {
   if (state.user && state.profile) {
     state.profile.credits = Math.max(0, (state.profile.credits || 0) - 1);
