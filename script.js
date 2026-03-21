@@ -631,14 +631,9 @@ function payLemon() {
 async function showIvePaid() {
   console.log('user:', state.user?.id, 'plan:', selectedPlan);
   if (!state.user) return;
-  
-async function showIvePaid() {
-  if (!state.user) return;
   paymentSessionId = 'ps_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
   localStorage.setItem('pn_payment_session', paymentSessionId);
-
   const plan = PLANS[selectedPlan];
-
   await db.from('payment_sessions').insert({
     id: paymentSessionId,
     user_id: state.user.id,
@@ -648,7 +643,6 @@ async function showIvePaid() {
     confirmed_at: new Date().toISOString(),
     created_at: new Date().toISOString()
   });
-
   closePaymentModal();
   showToast('Payment submitted! Waiting for verification...', 'info');
   startPaymentPolling();
