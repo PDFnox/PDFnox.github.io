@@ -635,16 +635,25 @@ async function showIvePaid() {
   localStorage.setItem('pn_payment_session', paymentSessionId);
 
   try {
-    const { data, error } = await db.from('payment_sessions').insert({
-      id: paymentSessionId,
-      user_id: state.user.id,
-      plan: selectedPlan,
-      credits: selectedPlan === 'pro' ? 500 : selectedPlan === 'annual' ? 999999 : 50,
-      status: 'user_confirmed',
-      confirmed_at: new Date().toISOString(),
-      created_at: new Date().toISOString()
+    const res = await fetch(`${SUPABASE_URL}/rest/v1/payment_sessions`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'apikey': SUPABASE_ANON_KEY,
+        'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
+        'Prefer': 'return=minimal'
+      },
+      body: JSON.stringify({
+        id: paymentSessionId,
+        user_id: state.user.id,
+        plan: selectedPlan,
+        credits: selectedPlan === 'pro' ? 500 : selectedPlan === 'annual' ? 999999 : 50,
+        status: 'user_confirmed',
+        confirmed_at: new Date().toISOString(),
+        created_at: new Date().toISOString()
+      })
     });
-    console.log('insert result:', data, 'error:', error);
+    console.log('insert status:', res.status);
   } catch(e) {
     console.log('insert exception:', e);
   }
