@@ -628,23 +628,26 @@ function payLemon() {
 }
 
 async function showIvePaid() {
-    console.log('showIvePaid started, user:', state.user, 'plan:', selectedPlan);
-  if (!state.user) { console.log('no user'); return; }
+  console.log('showIvePaid started, user:', state.user?.id, 'plan:', selectedPlan);
+  if (!state.user) return;
   
   paymentSessionId = 'ps_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
   localStorage.setItem('pn_payment_session', paymentSessionId);
 
-  const { data, error } = await db.from('payment_sessions').insert({
-    id: paymentSessionId,
-    user_id: state.user.id,
-    plan: selectedPlan,
-    credits: selectedPlan === 'pro' ? 500 : selectedPlan === 'annual' ? 999999 : 50,
-    status: 'user_confirmed',
-    confirmed_at: new Date().toISOString(),
-    created_at: new Date().toISOString()
-  });
-
-  console.log('insert:', data, 'error:', error);
+  try {
+    const { data, error } = await db.from('payment_sessions').insert({
+      id: paymentSessionId,
+      user_id: state.user.id,
+      plan: selectedPlan,
+      credits: selectedPlan === 'pro' ? 500 : selectedPlan === 'annual' ? 999999 : 50,
+      status: 'user_confirmed',
+      confirmed_at: new Date().toISOString(),
+      created_at: new Date().toISOString()
+    });
+    console.log('insert result:', data, 'error:', error);
+  } catch(e) {
+    console.log('insert exception:', e);
+  }
 
   closePaymentModal();
   showToast('Payment submitted! Waiting for verification...', 'info');
