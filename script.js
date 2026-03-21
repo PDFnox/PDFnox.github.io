@@ -197,7 +197,7 @@ async function doSignUp() {
 async function doGoogleAuth() {
   const { error } = await db.auth.signInWithOAuth({
     provider: 'google',
-    options: { redirectTo: window.location.href }
+    options: { redirectTo: 'https://pdfnox.github.io/' }
   });
   if (error) showToast(error.message, 'error');
 }
