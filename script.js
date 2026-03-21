@@ -629,6 +629,10 @@ function payLemon() {
 }
 
 async function showIvePaid() {
+  console.log('user:', state.user?.id, 'plan:', selectedPlan);
+  if (!state.user) return;
+  
+async function showIvePaid() {
   if (!state.user) return;
   paymentSessionId = 'ps_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
   localStorage.setItem('pn_payment_session', paymentSessionId);
