@@ -606,7 +606,6 @@ function openPaymentModal(plan) {
   selectedPlan = plan;
   document.getElementById('paymentModal').classList.remove('hidden');
   document.getElementById('ivedPaidSection').style.display = 'none';
-  document.getElementById('ivePaidBtn').onclick = showIvePaid;
 }
 
 function closePaymentModal() {
