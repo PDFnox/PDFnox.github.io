@@ -628,12 +628,12 @@ function payLemon() {
 }
 
 async function showIvePaid() {
-  if (!state.user) return;
+  if (!state.user) { console.log('no user'); return; }
   
   paymentSessionId = 'ps_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
   localStorage.setItem('pn_payment_session', paymentSessionId);
 
-  await db.from('payment_sessions').insert({
+  const { data, error } = await db.from('payment_sessions').insert({
     id: paymentSessionId,
     user_id: state.user.id,
     plan: selectedPlan,
@@ -643,11 +643,12 @@ async function showIvePaid() {
     created_at: new Date().toISOString()
   });
 
+  console.log('insert:', data, 'error:', error);
+
   closePaymentModal();
   showToast('Payment submitted! Waiting for verification...', 'info');
   startPaymentPolling();
 }
-
 function startPaymentPolling() {
   stopPaymentPolling();
   if (!paymentSessionId || !state.user) return;
